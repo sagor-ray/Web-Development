@@ -1,70 +1,75 @@
-*{
-    padding: 0;
-    margin: 0;
+* {
+  padding: 0;
+  margin: 0;
 }
-body{
-    background-color: #548687;
-    color: white;
-    text-align: center;
+body {
+  background-color: rgb(3, 73, 123);
+  color: white;
+  text-align: center;
 }
-#firstContainer{
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    gap: 1.5rem;
-    justify-content: center;
-    align-items: center;
-    margin-top: -3rem;
+#title {
+  height: 6rem;
+  line-height: 5rem;
+  font-size: 2rem;
 }
-#newGame{
-    background-color: #b0413e;
-    color: white;
-    padding: 1rem 2rem;
-    border: none;
-    border-radius: 1rem;
-    font-size: 3vmin;
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
-#title{
-    text-align: center;
-    padding: 20px 0;
+#container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#imgContainer {
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+}
+img {
+  height: 120px;
+  width: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+img:hover {
+  opacity: 0.5;
+  cursor: pointer;
+}
+#scoreContainer {
+  display: flex;
+  justify-content: space-between;
+  gap: 5rem;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 1.5rem;
+}
+.score {
+  padding: 3rem 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+#msgBox {
+  padding: 1rem 2rem;
+  background-color: blueviolet;
+  border: none;
+  border-radius: 10px;
+  font-size: 18px;
+}
+.restart {
+  padding: 1rem 2rem;
+  background-color: rgb(175, 11, 11);
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  margin-top: 2rem;
+  cursor: pointer;
 }
 
-#container{
-    height: 70vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.game{
-    height: 60vmin;
-    width: 60vmin;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    gap: 2vmin;
-}
-.box{
-    height: 18vmin;
-    width: 18vmin;
-    border: none;
-    border-radius: 1rem;
-    box-shadow: 0 0 1rem rgb(0, 0, 0, 0.3);
-    font-size: 7vmin;
-    color: #b0413e;
-    background-color: rgb(230, 238, 243);
-}
-#resetBtn{
-    background-color: #b0413e;
-    color: white;
-    padding: 1rem 2rem;
-    border: none;
-    border-radius: 1rem;
-    font-size: 3vmin;
-    margin-bottom: 2rem;
-}
-#winner{
-    padding-top: 0.5rem;
-    font-family: 'Courier New', Courier, monospace;
-    font-size: 5vmin;
+@media (max-width: 469px) {
+  img {
+    height: 90px;
+    width: 90px;
+  }
 }
